@@ -19,7 +19,7 @@ public class SceneController : MonoBehaviour
         // ------------------------------------------------------------------------
         // also remove uneeded scenes from build settings
 
-        finalSceneName = PlayerPrefs.GetString("FinalScene", "SceneC_rio_azul");
+        finalSceneName = PlayerPrefs.GetString("FinalScene", "SceneC_rio_verde");
         Invoke("LoadNextScene", sceneDuration);
     }
 
