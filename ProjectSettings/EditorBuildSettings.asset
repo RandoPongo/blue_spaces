@@ -6,35 +6,32 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/ScenesPhotos360/cena_01.unity
+    path: Assets/ScenesPhotos360/master_menu.unity
+    guid: f711d2e5a26be974c8ff4bc1d812ef43
+  - enabled: 1
+    path: Assets/ScenesPhotos360/user_menu.unity
+    guid: 84447874f578b3d49ba386046bb7e12b
+  - enabled: 1
+    path: Assets/ScenesPhotos360/scene_A.unity
+    guid: f5e104ce927ab6f4eb05bb930b981714
+  - enabled: 1
+    path: Assets/ScenesPhotos360/scene_01.unity
     guid: 497a3d8ced4b4ae48942663b1220c376
   - enabled: 1
-    path: Assets/ScenesBlue/menu.unity
-    guid: 99e9b1387e95a3643af9a98ff4a3a6e5
+    path: Assets/ScenesPhotos360/scene_02.unity
+    guid: 1aef151c28592d84b9992402f5f5a496
   - enabled: 1
-    path: Assets/ScenesBlue/SceneA.unity
-    guid: 1b19b1d3699cc51429bba91a927dd0f7
+    path: Assets/ScenesPhotos360/scene_03.unity
+    guid: b49b4803bf99fc84abadf75010791e65
   - enabled: 1
-    path: Assets/ScenesBlue/SceneB.unity
-    guid: 25ad81d2ead56d648a4ad5946fe2ec77
+    path: Assets/ScenesPhotos360/scene_04.unity
+    guid: 525cc888792968a448ed6b0947863445
   - enabled: 1
-    path: Assets/ScenesBlue/SceneC_mar_azul.unity
-    guid: 329c3763efa26e34197a7a2b19d4b379
+    path: Assets/ScenesPhotos360/scene_05.unity
+    guid: b005ab8d4dd7212439c0fe5c80a8e924
   - enabled: 1
-    path: Assets/ScenesBlue/SceneC_mar_verde.unity
-    guid: fddfed35aa8ae394b9032f07e85804ed
-  - enabled: 1
-    path: Assets/ScenesBlue/SceneC_parque_azul.unity
-    guid: d538ebe98a49c9c429721dd31e2ba557
-  - enabled: 1
-    path: Assets/ScenesBlue/SceneC_parque_verde.unity
-    guid: d8cac4e8b3927854e88a8a3a50a48640
-  - enabled: 1
-    path: Assets/ScenesBlue/SceneC_rio_azul.unity
-    guid: f9dc45b6cc76d9f4e8d3c1255ca0cc35
-  - enabled: 1
-    path: Assets/ScenesBlue/SceneC_rio_verde.unity
-    guid: 1bb74822544102948a2a7e00c0905bbc
+    path: Assets/ScenesPhotos360/scene_06.unity
+    guid: fd862bd41298ed142abd2af3d4b17d0d
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260, type: 2}
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: dc5a169419fa04987b057f65238cf3ba, type: 2}

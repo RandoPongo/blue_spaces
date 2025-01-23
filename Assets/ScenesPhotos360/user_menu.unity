@@ -557,8 +557,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2893fd5f414d134a9d1b285ebed95e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startButton: {fileID: 693889813}
-  escapeButton: {fileID: 0}
+  startButton: {fileID: 438579639}
+  escapeButton: {fileID: 693889813}
 --- !u!4 &447388048
 Transform:
   m_ObjectHideFlags: 0
