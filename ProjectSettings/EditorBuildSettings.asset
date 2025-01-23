@@ -6,10 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/ScenesPhotos360/master_menu.unity
+    path: Assets/ScenesPhotos360/menu_master.unity
     guid: f711d2e5a26be974c8ff4bc1d812ef43
   - enabled: 1
-    path: Assets/ScenesPhotos360/user_menu.unity
+    path: Assets/ScenesPhotos360/menu_user.unity
     guid: 84447874f578b3d49ba386046bb7e12b
   - enabled: 1
     path: Assets/ScenesPhotos360/scene_A.unity

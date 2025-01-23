@@ -558,7 +558,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startButton: {fileID: 438579639}
-  escapeButton: {fileID: 693889813}
+  quitButton: {fileID: 693889813}
 --- !u!4 &447388048
 Transform:
   m_ObjectHideFlags: 0
