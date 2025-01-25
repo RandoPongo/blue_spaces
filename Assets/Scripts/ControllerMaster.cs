@@ -11,6 +11,7 @@ public class UIController : MonoBehaviour
     public Button quitButton;
     public TMP_InputField time1InputField;  // For time1 input field
     public TMP_InputField time2InputField;  // For time2 input field
+    public TMP_InputField time3InputField;  // For time2 input field
     public TMP_Dropdown dropdown;           // For dropdown selection
 
     // Create a list of display names and corresponding scene names
@@ -42,6 +43,7 @@ public class UIController : MonoBehaviour
     {
         time1InputField.text = Global.time1.ToString();   // Set time1 from Global
         time2InputField.text = Global.time2.ToString();   // Set time2 from Global
+        time3InputField.text = Global.time3.ToString();   // Set time2 from Global
         dropdown.value = GetDropdownIndex(Global.selectedOption);  // Set dropdown value from Global
     }
 
@@ -63,20 +65,14 @@ public class UIController : MonoBehaviour
     public void ApplyNewSettings()
     {
         // Ensure to parse inputs and set them to static variables
-        if (int.TryParse(time1InputField.text, out int t1))
-        {
-            Global.time1 = t1;
-        }
-
-        if (int.TryParse(time2InputField.text, out int t2))
-        {
-            Global.time2 = t2;
-        }
+        if (int.TryParse(time1InputField.text, out int t1)){Global.time1 = t1;}
+        if (int.TryParse(time2InputField.text, out int t2)){Global.time2 = t2;}
+        if (int.TryParse(time3InputField.text, out int t3)){Global.time3 = t3;}
 
         // Set selected option based on dropdown selection
         Global.selectedOption = dropdown.options[dropdown.value].text;
 
-        Debug.Log($"New Settings Applied: Time1 = {Global.time1}, Time2 = {Global.time2}, Selected Option = {Global.selectedOption}");
+        Debug.Log($"New Settings Applied: Time1 = {Global.time1}, Time2 = {Global.time2},  Time3 = {Global.time3}, Selected Option = {Global.selectedOption}");
     }
 
     // Handle the start button click, passing control to the user
@@ -100,143 +96,21 @@ public class UIController : MonoBehaviour
     }
 
     // Reset values for time1, time2, and dropdown when going back to menu
-    public void ResetValuesForMenu()
-    {
-        Global.time1 = 0;
-        Global.time2 = 0;
-        Global.selectedOption = "";  // Reset to default
+    // public void ResetValuesForMenu()
+    // {
+        // Global.time1 = 10;
+        // Global.time2 = 20;
+        // Global.time3 = 40;
+        // Global.selectedOption = "";  // Reset to default
 
         // Also reset input fields and dropdown
-        InitializeMenuValues();
-    }
+        // InitializeMenuValues();
+    // }
 
     // Called when the user returns to the menu scene
-    public void ReturnToMenu()
-    {
-        ResetValuesForMenu();
-        SceneManager.LoadScene("MenuScene");  // Replace with your menu scene name
-    }
+    // public void ReturnToMenu()
+    // {
+        // ResetValuesForMenu();
+        // SceneManager.LoadScene("menu_master");  // Replace with your menu scene name
+    // }
 }
-
-/* 
-
-using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
-using UnityEngine.SceneManagement;
-
-public class UIController : MonoBehaviour
-{
-    public Button startButton;
-    public Button quitButton;
-    public TMP_InputField time1InputField;  // For time1 input field
-    public TMP_InputField time2InputField;  // For time2 input field
-    public TMP_Dropdown dropdown;           // For dropdown selection
-
-    void Start()
-    {
-        // Initialize the input fields with the current values
-        InitializeMenuValues();
-        // Set button listeners
-        startButton.onClick.AddListener(HandControlToUser);
-        quitButton.onClick.AddListener(QuitExperiment);
-
-    }
-
-    // Initialize the input fields and dropdown with values from Global
-    private void InitializeMenuValues()
-    {
-        time1InputField.text = Global.time1.ToString();   // Set time1 from Global
-        time2InputField.text = Global.time2.ToString();   // Set time2 from Global
-        dropdown.value = dropdown.options.FindIndex(option => option.text == Global.selectedOption);  // Set dropdown value from Global
-    }
-
-    // Update the static values in Global based on the user's input
-    public void ApplyNewSettings()
-    {
-        // Ensure to parse inputs and set them to static variables
-        if (int.TryParse(time1InputField.text, out int t1))
-        {
-            Global.time1 = t1;
-        }
-
-        if (int.TryParse(time2InputField.text, out int t2))
-        {
-            Global.time2 = t2;
-        }
-
-        Global.selectedOption = dropdown.options[dropdown.value].text;
-
-        Debug.Log($"New Settings Applied: Time1 = {Global.time1}, Time2 = {Global.time2}, Selected Option = {Global.selectedOption}");
-    }
-
-    // Called when switching to the user scene, passing control to the user
-    public void HandControlToUser()
-    {
-        // Apply the settings before switching scenes
-        ApplyNewSettings();
-
-        // Load the user scene
-        SceneManager.LoadScene("menu_user");
-    }
-
-    // Quit the application
-    public void QuitExperiment()
-    {
-        Application.Quit();
-    }
-
-    // Reset values for time1, time2, and dropdown when going back to menu
-    public void ResetValuesForMenu()
-    {
-        Global.time1 = 0;
-        Global.time2 = 0;
-        Global.selectedOption = "";  // Reset to default
-
-        // Also reset input fields and dropdown
-        InitializeMenuValues();
-    }
-
-    // Called when the user returns to the menu scene
-    public void ReturnToMenu()
-    {
-        ResetValuesForMenu();
-        SceneManager.LoadScene("MenuScene");  // Replace with your menu scene name
-    }
-} */
-
-/*
-using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
-using UnityEngine.SceneManagement;
-using System.Collections;
-
-public class UIController : MonoBehaviour
-{
-    public Button startButton;
-    public Button quitButton;
-
-
-    void Start()
-    {
-        // Set button listeners
-        startButton.onClick.AddListener(HandControlToUser);
-        quitButton.onClick.AddListener(QuitExperiment);
-    }
-
-
-    // Start the experiment
-    public void HandControlToUser()
-    {
-        SceneManager.LoadScene("menu_user");
-    }
-
-
-    // Quit the application
-    public void QuitExperiment()
-    {
-        Application.Quit();
-    }
-}
-*/

@@ -3121,8 +3121,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startButton: {fileID: 438579639}
   quitButton: {fileID: 693889813}
-  time1InputField: {fileID: 1972053086}
-  time2InputField: {fileID: 233875518}
+  time1InputField: {fileID: 111314956}
+  time2InputField: {fileID: 1972053086}
+  time3InputField: {fileID: 233875518}
   dropdown: {fileID: 640587047}
 --- !u!4 &902203343
 Transform:
@@ -3151,8 +3152,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 912b18039d91d9d44a8546385fa50aad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time1InputField: {fileID: 1972053086}
-  time2InputField: {fileID: 233875518}
+  time1InputField: {fileID: 111314956}
+  time2InputField: {fileID: 1972053086}
+  time3InputField: {fileID: 233875518}
   dropdown: {fileID: 640587047}
 --- !u!1 &907882973
 GameObject:

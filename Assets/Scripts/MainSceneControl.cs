@@ -24,7 +24,7 @@ public class MainSceneControl : MonoBehaviour
     private IEnumerator PlayMainScene()
     {
         // wait here
-        yield return new WaitForSeconds(Global.time2);
+        yield return new WaitForSeconds(Global.time3);
         SceneManager.LoadScene("menu_user");
     }
 

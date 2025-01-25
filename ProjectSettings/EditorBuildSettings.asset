@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/ScenesPhotos360/menu_user.unity
     guid: 84447874f578b3d49ba386046bb7e12b
   - enabled: 1
+    path: Assets/ScenesPhotos360/scene_B.unity
+    guid: 8cee40df8e427bd4d9e435ac542ff3ba
+  - enabled: 1
     path: Assets/ScenesPhotos360/scene_A.unity
     guid: f5e104ce927ab6f4eb05bb930b981714
   - enabled: 1
