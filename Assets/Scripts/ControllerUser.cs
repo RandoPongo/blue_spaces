@@ -27,6 +27,9 @@ public class UserController : MonoBehaviour
     // Quit the application
     public void BackToMaster()
     {
+        Global.time1 = 2; // mudar no fim para 60
+        Global.time2 = 10; // mudar no fim para 180
+        // reset scene name
         SceneManager.LoadScene("menu_master");
     }
 }

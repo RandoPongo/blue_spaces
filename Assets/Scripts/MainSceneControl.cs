@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine.SceneManagement;
 using System.Collections;
 
-public class Scene_05_Control : MonoBehaviour
+public class MainSceneControl : MonoBehaviour
 {
 
     // private float sceneADuration = 5f; // Duration for scene_A
@@ -17,14 +17,14 @@ public class Scene_05_Control : MonoBehaviour
     // Start the experiment
     public void StartScene()
     {
-        StartCoroutine(PlaScene_05());
+        StartCoroutine(PlayMainScene());
     }
 
     // go to user menu
-    private IEnumerator PlaScene_05()
+    private IEnumerator PlayMainScene()
     {
         // wait here
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(Global.time2);
         SceneManager.LoadScene("menu_user");
     }
 
