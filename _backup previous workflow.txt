@@ -1,0 +1,4 @@
+scenes blue and some 3D modeled assets of previous workflow 
+are in this branch
+also a working sequence on current 360 photo workflow
+ 
