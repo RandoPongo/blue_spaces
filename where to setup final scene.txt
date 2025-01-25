@@ -1,1 +1,0 @@
-set up final scene to use in scene "menu"
