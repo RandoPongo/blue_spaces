@@ -4,8 +4,9 @@ using TMPro; // For TMP elements
 public class Global : MonoBehaviour
 {
     // Static variables for global access
-    public static int time1 = 1;
-    public static int time2 = 2;
+    public static int time0 = 8;
+    public static int time1 = 4;
+    public static int time2 = 4;
     public static int time3 = 4;
     public static string selectedOption = "scene_01";
 
@@ -19,6 +20,7 @@ public class Global : MonoBehaviour
     public void ApplySettings()
     {
 
+        // if (true){time0 = t0;} // temp time for new user home
         if (int.TryParse(time1InputField.text, out int t1)){time1 = t1;}
         else{Debug.LogError("Invalid input for Time1.");}
         if (int.TryParse(time2InputField.text, out int t2)){time2 = t2;}
