@@ -8,12 +8,14 @@ public class UserController : MonoBehaviour{
     
     void Start(){
         // Start the experiment after clicking remotely in PC app (TODO)
-        StartCoroutine(StartUserHome());
+        // StartCoroutine(StartUserHome());
         }
 
-    private IEnumerator StartUserHome(){
-        yield return new WaitForSeconds(Global.time0);
-        SceneManager.LoadScene("scene_B");
-        }   
+
+    // private IEnumerator StartUserHome(){
+    //     // yield return new WaitForSeconds(Global.time0);
+    //     yield return new WaitForSeconds(30);
+    //     SceneManager.LoadScene("scene_B");
+    //     }   
 
     }   

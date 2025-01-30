@@ -87,7 +87,7 @@ public class UIController : MonoBehaviour
 
         // Load the selected scene
         // SceneManager.LoadScene(selectedScene);
-        SceneManager.LoadScene("menu_user");
+        SceneManager.LoadScene("scene_standby");
     }
 
     // Quit the application
@@ -96,22 +96,4 @@ public class UIController : MonoBehaviour
         Application.Quit();
     }
 
-    // Reset values for time1, time2, and dropdown when going back to menu
-    // public void ResetValuesForMenu()
-    // {
-        // Global.time1 = 10;
-        // Global.time2 = 20;
-        // Global.time3 = 40;
-        // Global.selectedOption = "";  // Reset to default
-
-        // Also reset input fields and dropdown
-        // InitializeMenuValues();
-    // }
-
-    // Called when the user returns to the menu scene
-    // public void ReturnToMenu()
-    // {
-        // ResetValuesForMenu();
-        // SceneManager.LoadScene("menu_master");  // Replace with your menu scene name
-    // }
 }

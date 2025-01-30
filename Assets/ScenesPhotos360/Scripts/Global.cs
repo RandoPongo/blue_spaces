@@ -5,10 +5,10 @@ public class Global : MonoBehaviour
 {
     // Static variables for global access
     public static int time0 = 8;
-    public static int time1 = 4;
-    public static int time2 = 4;
-    public static int time3 = 4;
-    public static string selectedOption = "scene_01";
+    public static int time1 = 1;
+    public static int time2 = 1;
+    public static int time3 = 1;
+    public static string selectedOption = "scene_02";
 
     // Public TMP components to assign in the Inspector
     public TMP_InputField time1InputField; // For setting Time1

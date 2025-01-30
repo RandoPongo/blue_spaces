@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/ScenesPhotos360/menu_user.unity
+    path: Assets/ScenesPhotos360/scene_standby.unity
     guid: 84447874f578b3d49ba386046bb7e12b
   - enabled: 1
     path: Assets/ScenesPhotos360/scene_B.unity
