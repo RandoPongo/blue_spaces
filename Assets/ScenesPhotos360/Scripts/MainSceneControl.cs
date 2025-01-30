@@ -15,7 +15,7 @@ public class MainSceneControl : MonoBehaviour{
         StartCoroutine(PlayMainScene());
     }
 
-    // go to user menu
+    // go to scene_standby
     private IEnumerator PlayMainScene(){
         // wait time
         yield return new WaitForSeconds(Global.time3);
@@ -23,3 +23,4 @@ public class MainSceneControl : MonoBehaviour{
         }
 
     }
+

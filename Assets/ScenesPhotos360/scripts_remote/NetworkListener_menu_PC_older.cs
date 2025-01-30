@@ -5,7 +5,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 
-public class NetworkListener : MonoBehaviour
+public class NetworkListener_menu_PC_older : MonoBehaviour
 {
     public int port = 5000;
     private TcpListener server;
@@ -23,37 +23,6 @@ public class NetworkListener : MonoBehaviour
             return;
         }
     }
-
-
-
-// void Awake(){
-//     Debug.LogError("⚠️ NetworkListener Awake! Object Name: " + gameObject.name);
-
-//     DontDestroyOnLoad(gameObject); // Keep this object alive across scenes
-
-//     if (FindObjectsOfType<NetworkListener>().Length > 1){
-//         Debug.LogError("🚨 Duplicate NetworkListener found! Destroying this one.");
-//         Destroy(gameObject);
-//         return;
-//     }
-// }
-
-// void Start(){
-//     Debug.LogError("✅ NetworkListener Start! Scene: " + SceneManager.GetActiveScene().name);
-
-//     if (server == null || !isRunning) {
-//         Debug.LogError("🚀 Server is NULL or Stopped. Restarting...");
-//         StartServer();
-//     } else {
-//         Debug.LogError("🟢 Server is already running. Restarting listener...");
-//         RestartServer();
-//     }
-// }
-
-
-
-
-
 
     void Start()
     {
@@ -123,42 +92,6 @@ void StartServer()
     }
 }
 
-
-
-
-// void ProcessCommand(string command)
-// {
-//     if (command.StartsWith("config:"))
-//     {
-//         string[] parts = command.Split(':');
-//         string selectedScene = parts[1];
-//         int time1 = int.Parse(parts[3]);
-//         int time2 = int.Parse(parts[5]);
-//         int time3 = int.Parse(parts[7]);
-
-//         // Log and apply the settings
-//         Debug.Log($"Received config - Scene: {selectedScene}, Time1: {time1}, Time2: {time2}, Time3: {time3}");
-
-//         // Apply settings to Global or other necessary variables
-//         Global.time1 = time1;
-//         Global.time2 = time2;
-//         Global.time3 = time3;
-//         Global.selectedOption = selectedScene;
-
-//         // Call a method to change to the desired scene (e.g., scene_B)
-//         UnityMainThreadDispatcher.Instance().Enqueue(() =>
-//         {
-//             SceneManager.LoadScene("scene_B");
-//         });
-//     }
-//     else
-//     {
-//         Debug.LogWarning("Unknown command: " + command);
-//     }
-// }
-
-
-
 // -------------------------------------------------------------------------------
 
 void ProcessCommand(string command)
@@ -183,27 +116,6 @@ void ProcessCommand(string command)
 // -------------------------------------------------------------------------------
 
 
-
-
-
-// void StopServer()
-// {
-//     if (server != null)
-//     {
-//         Debug.Log("Stopping server...");
-//         isRunning = false;
-//         server.Stop();
-//         server = null;
-//     }
-// }
-
-// void OnApplicationQuit()
-// {
-//     StopServer();
-// }
-
-
-
 private string GetLocalIPAddress()
 {
     string localIP = "Unknown";
@@ -219,6 +131,23 @@ private string GetLocalIPAddress()
     }
     return localIP;
 }
-
-
 }
+
+
+// stop server trash
+// -------------------------------------------------------------------------------
+/* void StopServer()
+{
+    if (server != null)
+    {
+        Debug.Log("Stopping server...");
+        isRunning = false;
+        server.Stop();
+        server = null;
+    }
+}
+
+void OnApplicationQuit()
+{
+    StopServer();
+} */
