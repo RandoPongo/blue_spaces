@@ -1,3 +1,9 @@
+
+
+
+
+
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Net;
@@ -14,7 +20,7 @@ public class NetworkListener_menu_PC_older : MonoBehaviour
 
     void Awake()
     {
-        DontDestroyOnLoad(gameObject); // Keep this object alive across scenes
+        // DontDestroyOnLoad(gameObject); // Keep this object alive across scenes
 
         // Prevent duplicate instances
         if (FindObjectsOfType<NetworkListener>().Length > 1)
@@ -132,22 +138,3 @@ private string GetLocalIPAddress()
     return localIP;
 }
 }
-
-
-// stop server trash
-// -------------------------------------------------------------------------------
-/* void StopServer()
-{
-    if (server != null)
-    {
-        Debug.Log("Stopping server...");
-        isRunning = false;
-        server.Stop();
-        server = null;
-    }
-}
-
-void OnApplicationQuit()
-{
-    StopServer();
-} */

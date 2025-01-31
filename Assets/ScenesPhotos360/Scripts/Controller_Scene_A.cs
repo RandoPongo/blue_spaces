@@ -7,6 +7,7 @@ public class Controller_Scene_A : MonoBehaviour
     void Start()
     {
         // Start the coroutine to play the scene and then transition to the next scene
+        // audioSource.Play();
         StartCoroutine(PlayScene_A());
     }
 
