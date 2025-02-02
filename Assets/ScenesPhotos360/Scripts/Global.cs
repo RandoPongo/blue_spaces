@@ -4,10 +4,10 @@ using TMPro; // For TMP elements
 public class Global : MonoBehaviour
 {
     // Static variables for global access
-    public static int time0 = 8;
-    public static int time1 = 1;
-    public static int time2 = 1;
-    public static int time3 = 1;
+    // public static int time0 = 8;
+    public static int time1 = 5;
+    public static int time2 = 5;
+    public static int time3 = 15;
     public static string selectedOption = "scene_02";
 
     // Public TMP components to assign in the Inspector

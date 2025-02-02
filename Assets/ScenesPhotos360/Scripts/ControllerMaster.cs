@@ -41,7 +41,7 @@ public class UIController : MonoBehaviour
     // Initialize the input fields and dropdown with values from Global
     private void InitializeMenuValues()
     {
-        time1InputField.text = Global.time0.ToString();   // TEMP
+        // time1InputField.text = Global.time0.ToString();   // TEMP
         time1InputField.text = Global.time1.ToString();   // Set time1 from Global
         time2InputField.text = Global.time2.ToString();   // Set time2 from Global
         time3InputField.text = Global.time3.ToString();   // Set time2 from Global
@@ -87,6 +87,7 @@ public class UIController : MonoBehaviour
 
         // Load the selected scene
         // SceneManager.LoadScene(selectedScene);
+        // SceneManager.LoadScene("scene_standby");
         SceneManager.LoadScene("scene_standby");
     }
 
