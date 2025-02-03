@@ -26,25 +26,18 @@ public class Controller_Scene_A : MonoBehaviour
     }
 
     // Map the selected option to the actual scene name
-    private string GetSceneName(string selectedOption)
-    {
-        // Example mapping logic (customize as needed):
-        switch (selectedOption)
-        {
-            case "Rio Azul":
-                return "scene_01";
-            case "Rio Verde":
-                return "scene_02";
-            case "Lago Azul":
-                return "scene_03";
-            case "Lago Verde":
-                return "scene_04";
-            case "Mar Azul":
-                return "scene_05";
-            case "Mar Verde":
-                return "scene_06";
-            default:
-                return "scene_01";  // Fallback to a default scene if nothing matches
+    private string GetSceneName(string selectedOption){
+        switch (selectedOption){
+            case "Rio Azul": return "scene_01";
+            case "Rio Verde":return "scene_02";
+            case "Lago Azul":return "scene_03";
+            case "Lago Verde":return "scene_04";
+            case "Estuário Azul":return "scene_05";
+            case "Estuário Verde":return "scene_06";
+            case "Mar Azul":return "scene_07";
+            case "Mar Verde":return "scene_08";
+            default:return "scene_01";  // Fallback to a default scene if nothing matches
+            }
         }
+    
     }
-}
