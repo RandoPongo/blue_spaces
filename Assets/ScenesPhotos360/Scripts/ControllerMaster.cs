@@ -15,8 +15,8 @@ public class UIController : MonoBehaviour
     public TMP_Dropdown dropdown;           // For dropdown selection
 
     // Create a list of display names and corresponding scene names
-    private string[] sceneDisplayNames = { "Rio Azul", "Rio Verde", "Lago Azul", "Lago Verde", "Estuário Azul", "Estuário Verde", "Mar Azul", "Mar Verde"};
-    private string[] sceneNames = { "scene_01", "scene_02", "scene_03", "scene_04", "scene_05", "scene_06", "scene_07", "scene_08"};
+    private string[] sceneDisplayNames = { "Rio Azul", "Rio Verde", "Lago Azul", "Lago Verde", "Estuário Azul", "Estuário Verde", "Mar Azul", "Mar Verde", "Ponte Azul", "Ponte Verde"};
+    private string[] sceneNames = { "scene_01", "scene_02", "scene_03", "scene_04", "scene_05", "scene_06", "scene_07", "scene_08", "scene_09", "scene_10"};
 
     void Start()
     {

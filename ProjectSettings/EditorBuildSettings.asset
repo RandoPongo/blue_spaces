@@ -41,6 +41,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/ScenesPhotos360/scene_08.unity
     guid: 20ebf8e84969b2946ba8667bd73c43e9
+  - enabled: 1
+    path: Assets/ScenesPhotos360/scene_09.unity
+    guid: f328d7d9ea88e494fa20dda8b143c535
+  - enabled: 1
+    path: Assets/ScenesPhotos360/scene_10.unity
+    guid: 58e87f5d61a0c1c43801907c39213990
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260, type: 2}
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: dc5a169419fa04987b057f65238cf3ba, type: 2}

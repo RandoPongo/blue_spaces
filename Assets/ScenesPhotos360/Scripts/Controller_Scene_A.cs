@@ -36,6 +36,8 @@ public class Controller_Scene_A : MonoBehaviour
             case "Estuário Verde":return "scene_06";
             case "Mar Azul":return "scene_07";
             case "Mar Verde":return "scene_08";
+            case "Ponte Azul":return "scene_09";
+            case "Ponte Verde":return "scene_10";
             default:return "scene_01";  // Fallback to a default scene if nothing matches
             }
         }
